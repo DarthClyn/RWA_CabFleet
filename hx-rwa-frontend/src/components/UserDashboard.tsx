@@ -160,14 +160,20 @@ export default function UserDashboard() {
         </div>
       </div>
 
-      {/* Info about deposit process */}
-      <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6">
-        <div className="flex items-start gap-3">
-          <div className="text-amber-600 mt-0.5">ℹ️</div>
-          <div className="text-sm text-amber-800">
-            <strong>How it works:</strong> Your deposit creates a request that requires admin approval. 
-            Once approved by the admin, CAB tokens will be minted to your wallet. 
-            This typically takes a few minutes to process.
+      {/* Info tip icon */}
+      <div className="flex justify-end mb-2">
+        <div className="relative group">
+          <button
+            className="w-7 h-7 flex items-center justify-center rounded-full bg-gray-200 text-gray-500 hover:bg-gray-300 focus:outline-none"
+            tabIndex={0}
+            aria-label="How it works"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </button>
+          <div className="absolute right-0 z-10 mt-2 w-80 bg-white border border-gray-200 rounded-lg shadow-lg p-4 text-sm text-gray-800 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto transition-opacity duration-200">
+            <strong>How it works:</strong> Your deposit creates a request that requires admin approval. Once approved by the admin, CAB tokens will be minted to your wallet. This typically takes a few minutes to process.
           </div>
         </div>
       </div>
