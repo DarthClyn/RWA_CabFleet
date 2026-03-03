@@ -130,7 +130,7 @@ export default function UserDashboard() {
         {/* Info tip icon */}
         <div className="relative group ml-2">
           <button
-            className="w-7 h-7 flex items-center justify-center rounded-full bg-gray-200 text-gray-500 hover:bg-gray-300 focus:outline-none"
+            className="w-7 h-7 flex items-center justify-center rounded-full bg-yellow-400 text-black hover:bg-yellow-500 focus:outline-none border border-yellow-500"
             tabIndex={0}
             aria-label="How it works"
           >
